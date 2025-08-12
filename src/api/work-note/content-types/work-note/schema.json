@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "work_notes",
+  "info": {
+    "singularName": "work-note",
+    "pluralName": "work-notes",
+    "displayName": "work note"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "note": {
+      "type": "text"
+    },
+    "title": {
+      "type": "string"
+    }
+  }
+}

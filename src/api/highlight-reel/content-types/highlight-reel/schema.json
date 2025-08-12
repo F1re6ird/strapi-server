@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "highlight_reels",
+  "info": {
+    "singularName": "highlight-reel",
+    "pluralName": "highlight-reels",
+    "displayName": "HighlightReel"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "youtubeLink": {
+      "type": "string"
+    },
+    "previewVideo": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "videos"
+      ]
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_sections_hero_sections",
+  "info": {
+    "displayName": "HeroSection"
+  },
+  "options": {},
+  "attributes": {
+    "heroText": {
+      "type": "text",
+      "maxLength": 500,
+      "required": true
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,53 @@
+{
+  "kind": "collectionType",
+  "collectionName": "videos",
+  "info": {
+    "singularName": "video",
+    "pluralName": "videos",
+    "displayName": "Video"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "maxLength": 50,
+      "required": true
+    },
+    "shortDescription": {
+      "type": "string",
+      "maxLength": 200,
+      "required": true
+    },
+    "longDescription": {
+      "type": "text",
+      "maxLength": 500,
+      "required": true
+    },
+    "previewVideo": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "youtubeLink": {
+      "type": "string",
+      "required": true
+    },
+    "created": {
+      "type": "date"
+    },
+    "displayOnHome": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    }
+  }
+}
