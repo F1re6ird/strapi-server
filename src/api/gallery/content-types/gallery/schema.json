@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "galleries",
+  "info": {
+    "singularName": "gallery",
+    "pluralName": "galleries",
+    "displayName": "Photo Gallery",
+    "description": "A collection of curated images"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "photos": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": ["images"]
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": ["nature", "architecture", "people", "travel", "abstract"],
+      "default": "nature"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "featured": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}
